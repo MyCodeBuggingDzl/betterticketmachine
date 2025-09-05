@@ -52,4 +52,9 @@ Questions of part 3
 59: Because it sets the balance to 0 before it could get returned.
 60: After writing a returned statement, any code written after that becomes unreachable.
 61: It stays 0 because of the int which make it not assigne to a variable.
-62
+62: public int emptyMachine()
+    {
+     int amountEmpty = total;
+     total = 0;
+    }
+63: 
