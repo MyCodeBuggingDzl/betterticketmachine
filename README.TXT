@@ -57,4 +57,5 @@ Questions of part 3
      int amountEmpty = total;
      total = 0;
     }
-63: 
+63: rewrote the method.
+64: I had to add a discountSelector method and modified a little of the other method such as the price.
