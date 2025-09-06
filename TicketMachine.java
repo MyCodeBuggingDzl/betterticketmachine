@@ -17,23 +17,35 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    private int discountSelected;
 
     /**
      * Create a machine that issues tickets of the given price.
      */
     public TicketMachine(int cost)
     {
-        price = cost;
+        price = cost - discountSelected;
         balance = 0;
         total = 0;
     }
-
+    /**
+     * discount
+     */
+    public void discountSelected()
+    {
+        
+         discountSelected = price / 2;
+         
+         
+    }
     /**
      * @Return The price of a ticket.
      */
     public int getPrice()
     {
+       
         return price;
+        
     }
 
     /**
@@ -68,7 +80,7 @@ public class TicketMachine
         int amountLeftToPay = price - balance;
     
     
-        if(amountLeftToPay <=  price) {
+        if(amountLeftToPay <= price) {
             // amount needed to print the ticket
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
